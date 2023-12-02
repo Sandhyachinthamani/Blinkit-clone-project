@@ -8,7 +8,7 @@
 .container{
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position:fixed;
     top:0;
     width:100%;
@@ -25,7 +25,7 @@
     padding: 0px 25px;
 }
 .logo svg{
-    width: 70%;
+    width: 80%;
     height: 40px;
 }
 .location{
@@ -34,20 +34,23 @@
 }
 .location-title{
     width:320px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 0.5px;
     margin-bottom:3px;
 
 }
-.location-desc .fa-sort-down{
+.location-desc{
+    font-size: 12px;
+}
+
+.fa-sort-down{
     transform: translateY(-2px);
     padding-left: 5px;
-    font-size: 16px;
+    font-size: 18px;
 }
 .search-bar{
-    padding: 0px 25px;
-    width:35%;
+    width:50%;
     border:1px solid rgba(0,0,0,0.04);
     border-radius: 12px;
     background: rgb(248,248,248);
@@ -55,12 +58,10 @@
     display: flex;
     align-items: center;
     height:45px;
-    padding:5px;
-
 }
 .search-bar input{
     width:100%;
-    font-size:100%;
+    font-size:80%;
     font-weight:400;
     border:0;
     outline: 0;
@@ -74,24 +75,28 @@
     border:0;
     outline:0;
     background-color: white;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 400;
     margin:0 4%;
 }
 .mycart{
-    flex-wrap:nowrap;
     color:white;
-    display: flex;
+    background-color: rgb(12, 131, 31);
+    border-radius: 8px;
+    cursor: pointer;
+    height: 52px;
+    width: 130px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
-    border:1px solid green;
-    outline:0;
-    background-color: green;
-    font-size: 17px;
-    font-weight: 400;
-    margin:0 4%;
-    border-radius: 12px;
-    padding: 10px 10px;
+    display: flex;
+    border:none ;
     gap:5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 2%;
+    padding: 10px;
 }
 .wrapper{
     display:flex;
@@ -232,4 +237,8 @@ footer{
 
 .fa-heart{
     color: red;
+}
+@media screen(max-width:480px) {
+
+    
 }
